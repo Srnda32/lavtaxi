@@ -5,22 +5,40 @@ var server = http.createServer(function (request, response) {
 
     var url = request.url;
 
-  
+    console.log('URL: ', url);
+
+
 
     if (url == '/style.css') {
-        var css = fs.readFileSync("./style.css");
+        var file = fs.readFileSync('.' + url);
         response.writeHeader(200, { "Content-Type": "text/css" });
-        response.write(css);
+        response.write(file);
         response.end();
         return;
     }
-    if (url =='/script.js' ){
-        var javascript =fs.readFileSync ('./script.js');
-        response.writeHeader (200, {"Content-Type":"text/javascript"});
-        response.write(javascript);
+    if (url == '/script.js') {
+        var file = fs.readFileSync('.' + url);
+        response.writeHeader(200, { "Content-Type": "text/javascript" });
+        response.write(file);
         response.end();
         return;
     }
+    niz = [
+        "png" ,
+        "jpg"
+        
+    ]
+     var ext = url.split('.').pop()
+     var check = niz.includes(ext)
+    if (check == true) {
+        var file = fs.readFileSync('.' + url);
+        response.writeHeader(200, { "Content-Type": "image/jpg" });
+        response.write(file);
+        response.end();
+        return;
+    }
+
+
     var html = fs.readFileSync("./index.html");
 
     response.writeHeader(200, { "Content-Type": "text/html" });

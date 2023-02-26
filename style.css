@@ -1,9 +1,16 @@
 body {
     position: relative;
     margin: 0;
-    background-color: #13ffa8;
     width: 100%;
-   height: 1000px;
+    height: 1000px;
+   background-color: #e5ff00;
+}
+#navbar #logo img {
+    float: left;
+    width: 80px;
+    
+  
+  
 }
 
 #navbar {
@@ -70,11 +77,23 @@ body {
         float: none;
     }
 }
+
 .HomeDiv{
-    display: flex;
-   
+    width: 100%;
 }
-.HomeDiv .HomeSection{
-  
-   
+.vh{
+    color: black;
+    text-align: center;
+    height: 100vh;
+    padding-top:  260px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: italic;
+border-radius: 100px
+
+    ;
 }
+.vh .prices{
+    
+    
+}
+
