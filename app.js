@@ -25,8 +25,8 @@ var server = http.createServer(function (request, response) {
     }
     niz = [
         "png" ,
-        "jpg"
-        
+        "jpg" ,
+        "ico" 
     ]
      var ext = url.split('.').pop()
      var check = niz.includes(ext)
