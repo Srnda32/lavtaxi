@@ -122,7 +122,7 @@ body {
 }
 
 article {
-    /*  leverage cascade for cross-browser gradients  */
+
     background: radial-gradient(hsl(100 100% 60%),
             hsl(200, 98%, 16%)) fixed;
     background: conic-gradient(hsl(100 100% 60%),
@@ -146,13 +146,7 @@ h1 {
     margin: auto;
 }
 
-p {
-    font-family: "Dank Mono", ui-monospace, monospace;
-    margin-top: 1ch;
-    line-height: 1.35;
-    max-inline-size: 40ch;
-    margin: auto;
-}
+
 
 .HomeH2 {
     --s: 0.1em;
@@ -165,17 +159,22 @@ p {
         linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
-    transition: 0.5s;
+    transition: 2s;
 }
 
 .HomeH2:hover {
-    --_p: 100%
+    --_p: 50%
 }
 
 .HomeH2 {
+    padding-left: 30px;
     font-family: system-ui, sans-serif;
     font-size: 2rem;
-    cursor: pointer;
+    cursor: auto;
+}
+#active{
+    
+
 }
 
 .wrapper {
@@ -337,9 +336,97 @@ input[type="checkbox"] {
     transform: translateX(-100px);
 }
 
-.wrapper #copyright {
+.copyrightDiv {
     font-size: 15px;
-    font-weight: 300;
     display: flex;
-    width: 100vh; 
+    font-weight: 300;
+    width: 100vh;
+}
+
+.aboutDiv #AboutH2 {
+    --s: 0.1em;
+    --c: #2c4bff;
+    color: #0000;
+    padding-bottom: var(--s);
+    background:
+        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 2s;
+}
+
+.aboutDiv #AboutH2:hover {
+    --_p: 100%
+}
+
+.aboutDiv #AboutH2 {
+    padding-left: 30px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#textAbout {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-left: 50px;
+    font-family: Brush Script MT (cursive);
+    margin: auto;
+}
+
+.h5copy {
+    font-size: 15px;
+    flex-direction: row;
+    margin-top: 200px;
+
+}
+
+h5 {
+    font-variant: initial;
+    font-style: italic;
+    font-family: Brush Script MT (cursive);
+    margin-left: auto;
+    margin-right: 65px;
+}
+
+.contactText {
+    font-style: italic;
+    color: white;
+}
+
+.h5About {
+    color: black;
+    font-size: 20px;
+    padding-top: 5px;
+    margin: 0;
+    padding-left: 50px;
+}
+
+.contactDiv {
+    color: black;
+    margin-top: 1000px;
+}
+
+.contactDiv #contactH2 {
+    --s: 0.1em;
+    --c: #2c4bff;
+    color: #0000;
+    padding-bottom: var(--s);
+    background:
+        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 2s;
+}
+
+.contactDiv #contactH2:hover {
+    --_p: 100%
+}
+
+.contactDiv #contactH2 {
+    padding-left: 30px;
+    font-size: 2.5rem;
+    cursor: pointer;
 }
