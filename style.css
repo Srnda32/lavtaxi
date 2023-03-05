@@ -132,7 +132,7 @@ h1 {
   font-family: Bebas;
   font-size: 20vmin;
   line-height: 1.1;
-  max-inline-size: 15ch;
+  
   margin: 0;
 
 }
@@ -430,7 +430,7 @@ h5 {
   color: #d2b26e;
   padding-top: 5px;
   margin-top: 0;
-  padding-left: 70px;
+  padding-left: 50px;
 }
 
 .contactDiv>h6 {
@@ -449,7 +449,7 @@ h5 {
 }
 
 #btn-back-to-top {
-  border: 0;
+  border: 1px;
   width: 50px;
   position: fixed;
   bottom: 30px;
@@ -480,7 +480,7 @@ h5 {
 }
 .LeftAndRight{
 
-  display: flex;
+  display: block;
 }
 .contactDivLeft {
   color: #d2b26e;
